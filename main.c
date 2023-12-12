@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
   DWORD filler = (bytesReadTotal - 131*8) / 8;
 
   // Validate data
-  if(bytesReadTotal < 1080 && filler <= 6 && filler%2 != 1)
+  if(bytesReadTotal < 1064 && filler <= 6 && filler%2 != 1)
   {
     printf("Recived data is not a HP48 Graphic 131 x 64\n");
     goto exit;
